@@ -197,7 +197,6 @@ annotate service.Customers with @(ValueList: {
     ],
 });
 
-
 annotate service.Customers with {
     ID @Common.Label: '{i18n>Customer ID}'
 };
