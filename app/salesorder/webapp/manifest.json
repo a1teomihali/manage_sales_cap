@@ -89,7 +89,7 @@
           "name": "SalesOrderList",
           "target": "SalesOrderList"
         },
-        {
+        { 
           "pattern": "SalesOrder({key}):?query:",
           "name": "SalesOrderObjectPage",
           "target": "SalesOrderObjectPage"
