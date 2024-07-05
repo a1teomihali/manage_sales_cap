@@ -18,7 +18,7 @@ entity SalesOrder : cuid, managed {
                           on Customer.salesOrder = $self;
 
     @title: 'Delivery Address'
-    DeliveryAddress : String(50);
+    DeliveryAddress : String(100);
 
     @title: 'Total Amount'
     TotalAmount     : Decimal;
@@ -27,7 +27,7 @@ entity SalesOrder : cuid, managed {
     TotalTax        : Decimal;
 
     @title: 'Sales Order Note'
-    SalesOrderNote  : String(100);
+    SalesOrderNote  : String(200);
 
     @title: 'Criticality'
     Criticality     : Integer;
@@ -36,11 +36,11 @@ entity SalesOrder : cuid, managed {
 entity Customers : cuid, managed {
     //    key CustomerId      : String(10) @(Core.Computed: true);
 
-    @title: 'Customer Name'
-    CustomerName    : String(20);
+    @title: 'Customer Full Name'
+    CustomerName    : String(50);
 
     @title: 'Customer Address'
-    CustomerAddress : String(50);
+    CustomerAddress : String(100);
 
     @title: 'Customer Email'
     CustomerEmail   : String(50);

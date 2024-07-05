@@ -144,7 +144,7 @@ annotate service.Customers with @(UI.LineItem #CustomerData: [
     },
     {
         $Type: 'UI.DataField',
-        Label: '{i18n>Customer Name}',
+        Label: '{i18n>Customer Full Name}',
         Value: CustomerName
     },
     {
