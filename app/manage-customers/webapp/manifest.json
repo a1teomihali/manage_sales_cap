@@ -1,7 +1,7 @@
 {
   "_version": "1.59.0",
   "sap.app": {
-    "id": "ns.salesorder",
+    "id": "cm.managecustomers",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -12,8 +12,8 @@
     "resources": "resources.json",
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
-      "version": "1.14.0",
-      "toolsId": "5c2676d3-9ed3-4430-86a1-878e509ea368"
+      "version": "1.14.1",
+      "toolsId": "0460df84-2494-4a5c-a12f-7f801aff2398"
     },
     "dataSources": {
       "mainService": {
@@ -61,7 +61,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "ns.salesorder.i18n.i18n"
+          "bundleName": "cm.managecustomers.i18n.i18n"
         }
       },
       "": {
@@ -86,28 +86,28 @@
       "routes": [
         {
           "pattern": ":?query:",
-          "name": "SalesOrderList",
-          "target": "SalesOrderList"
+          "name": "CustomersList",
+          "target": "CustomersList"
         },
         {
-          "pattern": "SalesOrder({key}):?query:",
-          "name": "SalesOrderObjectPage",
-          "target": "SalesOrderObjectPage"
+          "pattern": "Customers({key}):?query:",
+          "name": "CustomersObjectPage",
+          "target": "CustomersObjectPage"
         }
       ],
       "targets": {
-        "SalesOrderList": {
+        "CustomersList": {
           "type": "Component",
-          "id": "SalesOrderList",
+          "id": "CustomersList",
           "name": "sap.fe.templates.ListReport",
           "options": {
             "settings": {
-              "contextPath": "/SalesOrder",
+              "contextPath": "/Customers",
               "variantManagement": "Page",
               "navigation": {
-                "SalesOrder": {
+                "Customers": {
                   "detail": {
-                    "route": "SalesOrderObjectPage"
+                    "route": "CustomersObjectPage"
                   }
                 }
               },
@@ -121,15 +121,14 @@
             }
           }
         },
-        "SalesOrderObjectPage": {
+        "CustomersObjectPage": {
           "type": "Component",
-          "id": "SalesOrderObjectPage",
+          "id": "CustomersObjectPage",
           "name": "sap.fe.templates.ObjectPage",
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/SalesOrder",
-              "navigation": {}
+              "contextPath": "/Customers"
             }
           }
         }

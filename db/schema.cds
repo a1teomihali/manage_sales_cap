@@ -30,6 +30,7 @@ entity SalesOrder : cuid, managed {
     SalesOrderNote  : String(200);
 
     @title: 'Criticality'
+    @UI.HiddenFilter
     Criticality     : Integer;
 }
 

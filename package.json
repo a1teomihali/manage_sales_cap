@@ -12,14 +12,16 @@
   "devDependencies": {
     "@cap-js/sqlite": "^1",
     "@sap/eslint-plugin-cds": "^3",
-    "@sap/ux-specification": "^1.120.13",
+    "@sap/ux-specification": "^1.120.14",
     "eslint": "^9"
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-salesorder": "cds watch --open salesorder/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-salesorder": "cds watch --open salesorder/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-manage-customers": "cds watch --open manage-customers/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "sapux": [
-    "app/salesorder"
+    "app/salesorder",
+    "app/manage-customers"
   ]
 }

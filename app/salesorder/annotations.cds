@@ -1,27 +1,12 @@
 using SalesOrderService as service from '../../srv/salesorder-service';
-using {salemanagement as sm} from '../../db/schema';
-
-annotate sm.Customers with @(ValueList: {
-    Label         : 'Customers',
-    $Type         : 'Common.ValueListType',
-    CollectionPath: 'Customers',
-    Parameters    : [
-        {
-            $Type            : 'Common.ValueListParameterInOut',
-            LocalDataProperty: Customer.ID,
-            ValueListProperty: 'CustomerID'
-        },
-        {
-            $Type            : 'Common.ValueListParameterDisplayOnly',
-            ValueListProperty: 'CustomerName'
-        }
-    ]
-});
+using from '../../db/schema';
+// using {salemanagement as sm} from '../../db/schema';
 
 annotate service.SalesOrder with @(
     UI.SelectionFields           : [
         SalesOrderDate,
-        DeliveryAddress
+        DeliveryAddress,
+//        Customer.ID
     ],
 
     UI.HeaderInfo                : {
@@ -51,6 +36,11 @@ annotate service.SalesOrder with @(
         },
         {
             $Type: 'UI.DataField',
+            Label: 'Customer ID',
+            Value: Customer.ID
+        },
+        {
+            $Type: 'UI.DataField',
             Label: 'Total Amount',
             Value: TotalAmount
         },
@@ -70,6 +60,32 @@ annotate service.SalesOrder with @(
             $Type: 'UI.DataField',
             Label: 'Sales Order Note',
             Value: SalesOrderNote
+        },
+        {
+            $Type: 'UI.DataField',
+            Label: 'created At',
+            Value: createdAt,
+            ![@UI.Hidden]
+
+        },
+        {
+            $Type: 'UI.DataField',
+            Label: 'created By',
+            Value: createdBy,
+            ![@UI.Hidden]
+        },
+        {
+            $Type: 'UI.DataField',
+            Label: 'modified At',
+            Value: modifiedAt,
+            ![@UI.Hidden]
+
+        },
+        {
+            $Type: 'UI.DataField',
+            Label: 'modified By',
+            Value: modifiedBy,
+            ![@UI.Hidden]
         }
     ],
 
@@ -203,4 +219,7 @@ annotate service.Customers with {
 
 annotate service.SalesOrder with {
     ID @Common.Label: '{i18n>Sales Order ID}'
+};
+annotate service.SalesOrder with {
+    DeliveryAddress @UI.MultiLineText : true
 };
