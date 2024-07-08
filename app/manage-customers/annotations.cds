@@ -72,7 +72,7 @@ annotate service.Customers with @(
         ID    : 'GeneratedFacet',
         Label : 'Customer Information',
         Target: '@UI.FieldGroup#GeneratedGroup',
-    }, ],
+    }],
 
     UI.FieldGroup #GeneratedGroup: {
         $Type: 'UI.FieldGroupType',
