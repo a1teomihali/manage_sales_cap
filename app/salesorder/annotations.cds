@@ -5,8 +5,7 @@ using from '../../db/schema';
 annotate service.SalesOrder with @(
     UI.SelectionFields           : [
         SalesOrderDate,
-        DeliveryAddress,
-//        Customer.ID
+        DeliveryAddress
     ],
 
     UI.HeaderInfo                : {
@@ -220,6 +219,7 @@ annotate service.Customers with {
 annotate service.SalesOrder with {
     ID @Common.Label: '{i18n>Sales Order ID}'
 };
+
 annotate service.SalesOrder with {
-    DeliveryAddress @UI.MultiLineText : true
+    DeliveryAddress @UI.MultiLineText: true
 };
