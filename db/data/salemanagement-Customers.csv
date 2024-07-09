@@ -1,36 +1,32 @@
 ID;CustomerName;CustomerAddress;CustomerEmail;CustomerPhone;salesOrder_ID
-ccf5767d-b280-432d-aada-0687488fa4c8;Customer#1;TX;cust1@sap.com;0909999111;e0eb2fab-a3b5-4f05-9db9-0ca55e626602
-4d4bc6bd-17d2-4762-8b7e-b1031531f8e8;Customer#2;MI;cust2@sap.com;0909999112;cc4f9e12-b608-4244-9d6b-ec41fbaabb1t
-b454bd42-cea8-4e2f-b40c-3a6d504450db;Customer#3;MI;cust2@sap.com;0909999113;05c2a7a8-9eaa-48d5-b409-63b4a96d3b54
-9fd78adc-204d-4445-b055-14639b632859;Customer#4;BG;cust4@sap.com;0909999114;60da6e78-f8bb-46a8-888f-4d912a54df75
-3b4e9db0-fef2-4b63-a2ac-45e216c18dfc;Customer#5;MI;cust5@sap.com;0909999115;9493a2ba-70e7-4fd7-912a-6008a57e36d4
-5310ec15-320c-4fc1-97f8-5e2cf11babd0;Customer#6;LND;cust6@sap.com;0909999116;56d57019-c93e-4b9b-a579-857ac710f1c0
-d3fc1e66-3265-431c-bc47-9f6abaac7d7b;Customer#7;BDP;cust7@sap.com;0909999117;5bd05172-47ab-410d-abc9-dde761fe2e2u
-e0d23236-5784-4013-98ea-48cc843f3d05;Customer#8;AUS;cust8@sap.com;0909999118;a4567c19-3af3-45c6-bd99-b41c370e7d52
-67ec209c-afb8-4bed-9cb6-11a44bdb465c;Customer#9;TIA;cust9@sap.com;0909999119;ca192f09-7f5d-40c6-a4bb-e7b375a549e1
-204a66ba-85f2-488b-8d34-ee9c98ceffb6;Customer#10;TIA;cust10@sap.com;0909999120;8b45ec06-9725-4880-8b86-5b1a5e8fe27k
-87c844bb-459c-49b2-a72d-0b747def5e43;Customer#11;TO;cust11@sap.com;0909999121;e0eb2fab-a3b5-4f05-9db9-0ca55e626601
-6462b345-26db-4ef3-b6dc-2b671ecd377e;Customer#12;CAG;cust12@sap.com;0909999122;cc4f9e12-b608-4244-9d6b-ec41fbaabb1e
-52f3de26-d5ac-4392-87f2-cc3b12b545d6;Customer#13;VI;cust13@sap.com;0909999123;05c2a7a8-9eaa-48d5-b409-63b4a96d3b50
-105e1ce0-7db1-41e4-b26b-fbe1bfa8a2a6;Customer#14;MI;cust14@sap.com;0909999124;60da6e78-f8bb-46a8-888f-4d912a54df77
-9bb0f571-fa47-458b-967a-2b2074d695d8;Customer#15;TO;cust15@sap.com;0909999125;9493a2ba-70e7-4fd7-912a-6008a57e36d6
-3d5c81b0-7a98-4bac-b4a8-6f3fe0b83319;John Doe;123 Elm St, Springfield;john.doe@email.com;5551234;56d57019-c93e-4b9b-a579-857ac710f1c6
-300d9afd-110c-4394-b81f-3cf8281eb409;Jane Smith;456 Oak St, Riverside;jane.smith@email.com;5555678;5bd05172-47ab-410d-abc9-dde761fe2e2b
-26db555e-7c28-49c1-820d-7446908a7cc4;Alice Johnson;789 Pine St, Greenfield;alice.johnson@email.com;5558765;a4567c19-3af3-45c6-bd99-b41c370e7d58
-2e980f02-cb19-4d55-ba19-16eb39b8a924;Bob Brown;321 Maple St, Hilltown;bob.brown@email.com;5554321;ca192f09-7f5d-40c6-a4bb-e7b375a549e9
-58a3dfbd-258c-4272-874d-700b8bbb3389;Clara White;654 Spruce St, Lakeview;clara.white@email.com;5559876;8b45ec06-9725-4880-8b86-5b1a5e8fe27b
-ccf6767d-b380-434d-adda-0687488fa4c9;David Green;987 Cedar St, Brookside;david.green@email.com;5556543;e0eb2fab-a3b5-4f05-9db9-0ca55e626602
-4d4cc6bd-18d2-4762-8b7e-b1031531f8e9;Eva Black;123 Birch St, New City;eva.black@email.com;5553214;cc4f9e12-b608-4244-9d6b-ec41fbaabb1t
-b454bd42-cea8-4e2f-b40c-3a6d504450dd;Frank Gray;456 Walnut St, Oldtown;frank.gray@email.com;5552143;05c2a7a8-9eaa-48d5-b409-63b4a96d3b54
-9fd78adc-204d-4445-b055-14639b632851;Grace Hall;789 Chestnut St, Coastal;grace.hall@email.com;5551432;9493a2ba-70e7-4fd7-912a-6008a57e36d4
-3b4e9db0-fef2-4b63-a2ac-45e216c18dfo;Henry Ford;321 Sycamore St, Westside;henry.ford@email.com;5554123;60da6e78-f8bb-46a8-888f-4d912a54df75
-5310ec15-320c-4fc1-97f8-5e2cf11babd4;Isla Fisher;654 Willow St, Eastside;isla.fisher@email.com;5552314;ca192f09-7f5d-40c6-a4bb-e7b375a549e1
-d3fc1e66-3265-431c-bc47-9f6abaac7d7t;Jack King;789 Poplar St, Southtown;jack.king@email.com;5553421;e0eb2fab-a3b5-4f05-9db9-0ca55e626601
-e0d23236-5784-4013-98ea-48cc843f3d02;Laura Queen;123 Redwood St, Northside;laura.queen@email.com;5554312;a4567c19-3af3-45c6-bd99-b41c370e7d52
-67ec209c-afb8-4bed-9cb6-11a44bdb465p;Mia Prince;456 Fir St, Lakeside;mia.prince@email.com;5551235;05c2a7a8-9eaa-48d5-b409-63b4a96d3b50
-204a66ba-85f2-488b-8d34-ee9c98ceffb9;Noah Knight;789 Ash St, Hillcrest;noah.knight@email.com;5555679;9493a2ba-70e7-4fd7-912a-6008a57e36d6
-87c844bb-459c-49b2-a72d-0b747def5e42;Olivia Bishop;321 Pine St, Riverbend;olivia.bishop@email.com;5556784;56d57019-c93e-4b9b-a579-857ac710f1c6
-6462b345-26db-4ef3-b6dc-2b671ecd377h;Peter Wright;654 Elm St, Creekwood;peter.wright@email.com;5557891;05c2a7a8-9eaa-48d5-b409-63b4a96d3b50
-52f3de26-d5ac-4392-87f2-cc3b12b545d9;Quinn Fox;789 Oak St, Ridgeview;quinn.fox@email.com;5558912;5bd05172-47ab-410d-abc9-dde761fe2e2b
-105e1ce0-7db1-41e4-b26b-fbe1bfa8a2a0;Rachel Stone;321 Spruce St, Meadowlands;rachel.stone@email.com;5559123;56d57019-c93e-4b9b-a579-857ac710f1c6
-9bb0f571-fa47-458b-967a-2b2074d695d3;Sam Waters;654 Pine St, Highridge;sam.waters@email.com;5552345;a4567c19-3af3-45c6-bd99-b41c370e7d52
+ccf5767d-b280-432d-aada-0687488fa4c8;Jim Perry;23 Texas St;cust1@sap.com;0909999111;e0eb2fab-a3b5-4f05-9db9-0ca55e626602
+4d4bc6bd-17d2-4762-8b7e-b1031531f8e8;Mario Patto;via Benigno Crespi 19, Milan;cust2@sap.com;0909999112;cc4f9e12-b608-4244-9d6b-ec41fbaabb1t
+b454bd42-cea8-4e2f-b40c-3a6d504450db;Claudia Schuli;piazza Loreto 5, Milan;cust2@sap.com;0909999113;05c2a7a8-9eaa-48d5-b409-63b4a96d3b54
+9fd78adc-204d-4445-b055-14639b632859;Emmanuele Lodi;via Orio al Serio 19, Bergamo;cust4@sap.com;0909999114;60da6e78-f8bb-46a8-888f-4d912a54df75
+3b4e9db0-fef2-4b63-a2ac-45e216c18dfc;Fabio Perre;via Benigno Crespi 7, Milan;cust5@sap.com;0909999115;9493a2ba-70e7-4fd7-912a-6008a57e36d4
+5310ec15-320c-4fc1-97f8-5e2cf11babd0;Bryan Morris;23 Heathrow St, London;cust6@sap.com;0909999116;56d57019-c93e-4b9b-a579-857ac710f1c0
+d3fc1e66-3265-431c-bc47-9f6abaac7d7b;Silvia Budd;2nd Buda, Hungary;cust7@sap.com;0909999117;5bd05172-47ab-410d-abc9-dde761fe2e2u
+e0d23236-5784-4013-98ea-48cc843f3d05;Christian Webber;20 Wien, Austria;cust8@sap.com;0909999118;a4567c19-3af3-45c6-bd99-b41c370e7d52
+67ec209c-afb8-4bed-9cb6-11a44bdb465c;Klevis Shuka;29 Tirana St;cust9@sap.com;0909999119;ca192f09-7f5d-40c6-a4bb-e7b375a549e1
+204a66ba-85f2-488b-8d34-ee9c98ceffb6;Marta Gani;43 Tirana St;cust10@sap.com;0909999120;8b45ec06-9725-4880-8b86-5b1a5e8fe27k
+87c844bb-459c-49b2-a72d-0b747def5e43;Loris Gatto;via Torri 9, Torino;cust11@sap.com;0909999121;e0eb2fab-a3b5-4f05-9db9-0ca55e626601
+6462b345-26db-4ef3-b6dc-2b671ecd377e;Andrea Ondria;via Cagliari 54, CAG;cust12@sap.com;0909999122;cc4f9e12-b608-4244-9d6b-ec41fbaabb1e
+52f3de26-d5ac-4392-87f2-cc3b12b545d6;Matteo Vevo;via Marco Polo 25, Venice;cust13@sap.com;0909999123;05c2a7a8-9eaa-48d5-b409-63b4a96d3b50
+105e1ce0-7db1-41e4-b26b-fbe1bfa8a2a6;Bianca Londa;viale Monza 10, Milan;cust14@sap.com;0909999124;60da6e78-f8bb-46a8-888f-4d912a54df77
+9bb0f571-fa47-458b-967a-2b2074d695d8;Sara Terri;via Torino 90, TO;cust15@sap.com;0909999125;9493a2ba-70e7-4fd7-912a-6008a57e36d6
+3d5c81b0-7a98-4bac-b4a8-6f3fe0b83319;John Doe;123 Elm St, Springfield;john.doe@gmail.com;5551234;56d57019-c93e-4b9b-a579-857ac710f1c6
+300d9afd-110c-4394-b81f-3cf8281eb409;Jane Smith;456 Oak St, Riverside;jane.smith@gmail.com;5555678;5bd05172-47ab-410d-abc9-dde761fe2e2b
+26db555e-7c28-49c1-820d-7446908a7cc4;Alice Johnson;789 Pine St, Greenfield;alice.johnson@gmail.com;5558765;a4567c19-3af3-45c6-bd99-b41c370e7d58
+2e980f02-cb19-4d55-ba19-16eb39b8a924;Bob Brown;321 Maple St, Hilltown;bob.brown@gmail.com;5554321;ca192f09-7f5d-40c6-a4bb-e7b375a549e9
+58a3dfbd-258c-4272-874d-700b8bbb3389;Clara White;654 Spruce St, Lakeview;clara.white@gmail.com;5559876;8b45ec06-9725-4880-8b86-5b1a5e8fe27b
+ccf6767d-b380-434d-adda-0687488fa4c9;David Green;987 Cedar St, Brookside;david.green@gmail.com;5556543;e0eb2fab-a3b5-4f05-9db9-0ca55e626602
+4d4cc6bd-18d2-4762-8b7e-b1031531f8e9;Eva Black;123 Birch St, New City;eva.black@gmail.com;5553214;cc4f9e12-b608-4244-9d6b-ec41fbaabb1t
+b454bd42-cea8-4e2f-b40c-3a6d504450dd;Frank Gray;456 Walnut St, Oldtown;frank.gray@gmail.com;5552143;05c2a7a8-9eaa-48d5-b409-63b4a96d3b54
+9fd78adc-204d-4445-b055-14639b632851;Grace Hall;789 Chestnut St, Coastal;grace.hall@gmail.com;5551432;9493a2ba-70e7-4fd7-912a-6008a57e36d4
+5310ec15-320c-4fc1-97f8-5e2cf11babd4;Isla Fisher;654 Willow St, Eastside;isla.fisher@gmail.com;5552314;ca192f09-7f5d-40c6-a4bb-e7b375a549e1
+e0d23236-5784-4013-98ea-48cc843f3d02;Laura Queen;123 Redwood St, Northside;laura.queen@gmail.com;5554312;a4567c19-3af3-45c6-bd99-b41c370e7d52
+204a66ba-85f2-488b-8d34-ee9c98ceffb9;Noah Knight;789 Ash St, Hillcrest;noah.knight@gmail.com;5555679;9493a2ba-70e7-4fd7-912a-6008a57e36d6
+87c844bb-459c-49b2-a72d-0b747def5e42;Olivia Bishop;321 Pine St, Riverbend;olivia.bishop@gmail.com;5556784;56d57019-c93e-4b9b-a579-857ac710f1c6
+52f3de26-d5ac-4392-87f2-cc3b12b545d9;Quinn Fox;789 Oak St, Ridgeview;quinn.fox@gmail.com;5558912;5bd05172-47ab-410d-abc9-dde761fe2e2b
+105e1ce0-7db1-41e4-b26b-fbe1bfa8a2a0;Rachel Stone;321 Spruce St, Meadowlands;rachel.stone@gmail.com;5559123;56d57019-c93e-4b9b-a579-857ac710f1c6
+9bb0f571-fa47-458b-967a-2b2074d695d3;Sam Waters;654 Pine St, Highridge;sam.waters@gmail.com;5552345;a4567c19-3af3-45c6-bd99-b41c370e7d52

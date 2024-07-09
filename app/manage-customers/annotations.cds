@@ -16,8 +16,9 @@ annotate service.Customers with @(
 
     UI.LineItem                  : [
         {
-            $Type: 'UI.DataField',
-            Value: ID
+            $Type      : 'UI.DataField',
+            Criticality: #Information,
+            Value      : ID
         },
         {
             $Type: 'UI.DataField',
@@ -37,7 +38,8 @@ annotate service.Customers with @(
         },
         {
             $Type: 'UI.DataField',
-            Value: salesOrder_ID
+            Value: salesOrder_ID,
+            ![@UI.Hidden]
         },
         {
             $Type: 'UI.DataField',

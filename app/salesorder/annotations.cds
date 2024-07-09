@@ -43,6 +43,7 @@ annotate service.SalesOrder with @(
             Label: 'Total Amount',
             Value: TotalAmount
         },
+        
         {
             $Type            : 'UI.DataField',
             Label            : 'Criticality',
@@ -55,6 +56,7 @@ annotate service.SalesOrder with @(
             Label: 'Total Tax',
             Value: TotalTax
         },
+        
         {
             $Type: 'UI.DataField',
             Label: 'Sales Order Note',
@@ -132,6 +134,7 @@ annotate service.SalesOrder with @(
                 Label: 'Total Amount',
                 Value: TotalAmount
             },
+            
             {
                 $Type: 'UI.DataField',
                 Label: 'Criticality',
@@ -142,12 +145,13 @@ annotate service.SalesOrder with @(
                 Label: 'Total Tax',
                 Value: TotalTax
             },
+           
             {
                 $Type: 'UI.DataField',
                 Label: 'Sales Order Note',
                 Value: SalesOrderNote
             }
-        ],
+        ]
     }
 );
 

@@ -23,8 +23,11 @@ entity SalesOrder : cuid, managed {
     @title: 'Total Amount'
     TotalAmount     : Decimal;
 
+    
     @title: 'Total Tax'
     TotalTax        : Decimal;
+
+    
 
     @title: 'Sales Order Note'
     SalesOrderNote  : String(200);
@@ -50,5 +53,6 @@ entity Customers : cuid, managed {
     CustomerPhone   : String(15);
 
     @title: 'Sales Order ID'
+    @UI.HiddenFilter
     salesOrder      : Association to SalesOrder;
 }
