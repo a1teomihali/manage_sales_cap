@@ -2,7 +2,7 @@ ID;CustomerName;CustomerAddress;CustomerEmail;CustomerPhone;salesOrder_ID
 ccf5767d-b280-432d-aada-0687488fa4c8;Jim Perry;23 Texas St;cust1@sap.com;0909999111;e0eb2fab-a3b5-4f05-9db9-0ca55e626602
 4d4bc6bd-17d2-4762-8b7e-b1031531f8e8;Mario Patto;via Benigno Crespi 19, Milan;cust2@sap.com;0909999112;cc4f9e12-b608-4244-9d6b-ec41fbaabb1t
 b454bd42-cea8-4e2f-b40c-3a6d504450db;Claudia Schuli;piazza Loreto 5, Milan;cust2@sap.com;0909999113;05c2a7a8-9eaa-48d5-b409-63b4a96d3b54
-9fd78adc-204d-4445-b055-14639b632859;Emmanuele Lodi;via Orio al Serio 19, Bergamo;cust4@sap.com;0909999114;60da6e78-f8bb-46a8-888f-4d912a54df75
+9fd78adc-204d-4445-b055-14639b632859;Emanuele Lodi;via Orio al Serio 19, Bergamo;cust4@sap.com;0909999114;60da6e78-f8bb-46a8-888f-4d912a54df75
 3b4e9db0-fef2-4b63-a2ac-45e216c18dfc;Fabio Perre;via Benigno Crespi 7, Milan;cust5@sap.com;0909999115;9493a2ba-70e7-4fd7-912a-6008a57e36d4
 5310ec15-320c-4fc1-97f8-5e2cf11babd0;Bryan Morris;23 Heathrow St, London;cust6@sap.com;0909999116;56d57019-c93e-4b9b-a579-857ac710f1c0
 d3fc1e66-3265-431c-bc47-9f6abaac7d7b;Silvia Budd;2nd Buda, Hungary;cust7@sap.com;0909999117;5bd05172-47ab-410d-abc9-dde761fe2e2u
