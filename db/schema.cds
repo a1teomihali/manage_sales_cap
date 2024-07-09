@@ -23,11 +23,14 @@ entity SalesOrder : cuid, managed {
     @title: 'Total Amount'
     TotalAmount     : Decimal;
 
-    
+    @title: 'Amount Currency'
+    AmountCurrency  : String;
+
     @title: 'Total Tax'
     TotalTax        : Decimal;
 
-    
+    @title: 'Tax Currency'
+    TaxCurrency     : String;
 
     @title: 'Sales Order Note'
     SalesOrderNote  : String(200);
