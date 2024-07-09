@@ -201,6 +201,32 @@ annotate service.Customers with @(UI.LineItem #CustomerData: [
         $Type: 'UI.DataField',
         Label: '{i18n>Sales Order ID}',
         Value: salesOrder_ID
+    },
+    {
+        $Type: 'UI.DataField',
+        Label: 'created At',
+        Value: createdAt,
+        ![@UI.Hidden]
+
+    },
+    {
+        $Type: 'UI.DataField',
+        Label: 'created By',
+        Value: createdBy,
+        ![@UI.Hidden]
+    },
+    {
+        $Type: 'UI.DataField',
+        Label: 'modified At',
+        Value: modifiedAt,
+        ![@UI.Hidden]
+
+    },
+    {
+        $Type: 'UI.DataField',
+        Label: 'modified By',
+        Value: modifiedBy,
+        ![@UI.Hidden]
     }
 ]);
 
