@@ -122,9 +122,10 @@ annotate service.SalesOrder with @(
                 Value: ID
             },
             {
-                $Type: 'UI.DataField',
-                Label: 'Sales Order Date',
-                Value: SalesOrderDate
+                $Type            : 'UI.DataField',
+                Label            : 'Sales Order Date',
+                Value            : SalesOrderDate,
+                ![@UI.Importance]: #High
             },
             {
                 $Type: 'UI.DataField',
@@ -138,14 +139,16 @@ annotate service.SalesOrder with @(
                 Value: DeliveryAddress
             },
             {
-                $Type: 'UI.DataField',
-                Label: 'Total Amount',
-                Value: TotalAmount
+                $Type            : 'UI.DataField',
+                Label            : 'Total Amount',
+                Value            : TotalAmount,
+                ![@UI.Importance]: #High
             },
             {
-                $Type: 'UI.DataField',
-                Label: 'Amount Currency',
-                Value: AmountCurrency
+                $Type            : 'UI.DataField',
+                Label            : 'Amount Currency',
+                Value            : AmountCurrency,
+                ![@UI.Importance]: #Medium
             },
             {
                 $Type: 'UI.DataField',
@@ -153,14 +156,16 @@ annotate service.SalesOrder with @(
                 Value: Criticality
             },
             {
-                $Type: 'UI.DataField',
-                Label: 'Total Tax',
-                Value: TotalTax
+                $Type            : 'UI.DataField',
+                Label            : 'Total Tax',
+                Value            : TotalTax,
+                ![@UI.Importance]: #High
             },
             {
-                $Type: 'UI.DataField',
-                Label: 'Tax Currency',
-                Value: TaxCurrency
+                $Type            : 'UI.DataField',
+                Label            : 'Tax Currency',
+                Value            : TaxCurrency,
+                ![@UI.Importance]: #Medium
             },
             {
                 $Type: 'UI.DataField',
@@ -178,24 +183,28 @@ annotate service.Customers with @(UI.LineItem #CustomerData: [
         Value: ID
     },
     {
-        $Type: 'UI.DataField',
-        Label: '{i18n>Customer Full Name}',
-        Value: CustomerName
+        $Type            : 'UI.DataField',
+        Label            : '{i18n>Customer Full Name}',
+        Value            : CustomerName,
+        ![@UI.Importance]: #High
     },
     {
-        $Type: 'UI.DataField',
-        Label: '{i18n>Customer Email}',
-        Value: CustomerEmail
+        $Type            : 'UI.DataField',
+        Label            : '{i18n>Customer Email}',
+        Value            : CustomerEmail,
+        ![@UI.Importance]: #High
     },
     {
-        $Type: 'UI.DataField',
-        Label: '{i18n>Customer Phone Number}',
-        Value: CustomerPhone
+        $Type            : 'UI.DataField',
+        Label            : '{i18n>Customer Phone Number}',
+        Value            : CustomerPhone,
+        ![@UI.Importance]: #High
     },
     {
-        $Type: 'UI.DataField',
-        Label: '{i18n>Customer Address}',
-        Value: CustomerAddress
+        $Type            : 'UI.DataField',
+        Label            : '{i18n>Customer Address}',
+        Value            : CustomerAddress,
+        ![@UI.Importance]: #High
     },
     {
         $Type: 'UI.DataField',
