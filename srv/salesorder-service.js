@@ -10,7 +10,7 @@ module.exports = cds.service.impl(async function () {
         sales.forEach(sale => {
             if (sale.TotalAmount < 20000) {
                 sale.Criticality = 3;
-            } else if (sale.TotalAmount >= 20000 && sale.TotalAmount <= 50000) {
+            } else if (sale.TotalAmount >= 20000 && sale.TotalAmount <= 100000) {
                 sale.Criticality = 2;
             } else {
                 sale.Criticality = 1;
