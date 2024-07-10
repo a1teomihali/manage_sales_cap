@@ -1,6 +1,5 @@
 using SalesOrderService as service from '../../srv/salesorder-service';
 using from '../../db/schema';
-// using {salemanagement as sm} from '../../db/schema';
 
 annotate service.SalesOrder with @(
     UI.SelectionFields           : [
