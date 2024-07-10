@@ -101,19 +101,19 @@ annotate service.SalesOrder with @(
     UI.Facets                    : [
         {
             $Type : 'UI.ReferenceFacet',
-            ID    : 'GeneratedFacet',
-            Label : 'General Information',
-            Target: '@UI.FieldGroup#GeneratedGroup'
+            ID    : 'OrderDetails',
+            Label : 'Order Details',
+            Target: '@UI.FieldGroup#OrderDetails'
         },
         {
             $Type : 'UI.ReferenceFacet',
-            ID    : 'CustomerData',
-            Label : 'Customer Data',
-            Target: 'Customer/@UI.LineItem#CustomerData'
+            ID    : 'CustomerDetails',
+            Label : 'Customer Details',
+            Target: 'Customer/@UI.LineItem#CustomerDetails'
         }
     ],
 
-    UI.FieldGroup #GeneratedGroup: {
+    UI.FieldGroup #OrderDetails: {
         $Type: 'UI.FieldGroupType',
         Data : [
             {
@@ -176,7 +176,7 @@ annotate service.SalesOrder with @(
     }
 );
 
-annotate service.Customers with @(UI.LineItem #CustomerData: [
+annotate service.Customers with @(UI.LineItem #CustomerDetails: [
     {
         $Type: 'UI.DataField',
         Label: '{i18n>Customer ID}',
