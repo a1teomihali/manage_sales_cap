@@ -53,7 +53,7 @@ entity Customers : cuid, managed {
     CustomerEmail   : String(50)  @mandatory;
 
     @title: 'Customer Phone Number'
-    CustomerPhone   : String(15)  @mandatory;
+    CustomerPhone   : String(15);
 
     @title: 'Sales Order ID'
     @UI.HiddenFilter
