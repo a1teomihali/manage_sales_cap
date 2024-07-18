@@ -2,19 +2,20 @@ using SalesOrderService as service from '../../srv/salesorder-service';
 using from '../../db/schema';
 
 annotate service.SalesOrder with @(
-    UI.SelectionFields           : [
+    UI.SelectionFields         : [
+        ID,
         SalesOrderDate,
         DeliveryAddress
     ],
 
-    UI.HeaderInfo                : {
+    UI.HeaderInfo              : {
         TypeName      : 'Sales Order',
         TypeNamePlural: 'Sales Orders',
         Title         : {Value: ID},
         Description   : {Value: SalesOrderNote}
     },
 
-    UI.LineItem                  : [
+    UI.LineItem                : [
         {
             $Type            : 'UI.DataField',
             Label            : 'Sales Order ID',
@@ -97,7 +98,7 @@ annotate service.SalesOrder with @(
         }
     ],
 
-    UI.Facets                    : [
+    UI.Facets                  : [
         {
             $Type : 'UI.ReferenceFacet',
             ID    : 'OrderDetails',
@@ -268,10 +269,12 @@ annotate service.Customers with @(ValueList: {
 
 annotate service.Customers with {
     ID @Common.Label: '{i18n>Customer ID}'
+    @UI.HiddenFilter
 };
 
 annotate service.SalesOrder with {
     ID @Common.Label: '{i18n>Sales Order ID}'
+    @UI.HiddenFilter
 };
 
 annotate service.SalesOrder with {
