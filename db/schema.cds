@@ -24,12 +24,14 @@ entity SalesOrder : cuid, managed {
     TotalAmount     : Decimal     @mandatory;
 
     @title: 'Amount Currency'
+    @UI.HiddenFilter
     AmountCurrency  : String      @mandatory;
 
     @title: 'Total Tax'
     TotalTax        : Decimal     @mandatory;
 
     @title: 'Tax Currency'
+    @UI.HiddenFilter
     TaxCurrency     : String      @mandatory;
 
     @title: 'Sales Order Note'
