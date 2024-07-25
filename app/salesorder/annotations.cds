@@ -36,7 +36,8 @@ annotate service.SalesOrder with @(
         {
             $Type: 'UI.DataField',
             Label: 'Customer ID',
-            Value: Customer.ID
+            Value: Customer.ID,
+            ![@UI.Hidden]
         },
         {
             $Type: 'UI.DataField',

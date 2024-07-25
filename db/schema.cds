@@ -7,35 +7,33 @@ using {
 
 
 entity SalesOrder : cuid, managed {
-    //        @title: 'Sales Order ID'
-    //    key SalesOrderNumber : String(10) @(Core.Computed: true);
 
     @title: 'Sales Order Date'
-    SalesOrderDate  : Date        @mandatory;
+    SalesOrderDate  : Date       @mandatory;
 
     @title: 'Customer'
     Customer        : Composition of many Customers
                           on Customer.salesOrder = $self;
 
     @title: 'Delivery Address'
-    DeliveryAddress : String(100) @mandatory;
+    DeliveryAddress : String(30) @mandatory;
 
     @title: 'Total Amount'
-    TotalAmount     : Decimal     @mandatory;
+    TotalAmount     : Decimal    @mandatory;
 
     @title: 'Amount Currency'
     @UI.HiddenFilter
-    AmountCurrency  : String      @mandatory;
+    AmountCurrency  : String(10) @mandatory;
 
     @title: 'Total Tax'
-    TotalTax        : Decimal     @mandatory;
+    TotalTax        : Decimal    @mandatory;
 
     @title: 'Tax Currency'
     @UI.HiddenFilter
-    TaxCurrency     : String      @mandatory;
+    TaxCurrency     : String(10) @mandatory;
 
     @title: 'Sales Order Note'
-    SalesOrderNote  : String(200);
+    SalesOrderNote  : String(100);
 
     @title: 'Criticality'
     @UI.HiddenFilter
@@ -43,16 +41,15 @@ entity SalesOrder : cuid, managed {
 }
 
 entity Customers : cuid, managed {
-    //    key CustomerId      : String(10) @(Core.Computed: true);
 
     @title: 'Customer Full Name'
-    CustomerName    : String(50)  @mandatory;
+    CustomerName    : String(30) @mandatory;
 
     @title: 'Customer Address'
-    CustomerAddress : String(100) @mandatory;
+    CustomerAddress : String(50) @mandatory;
 
     @title: 'Customer Email'
-    CustomerEmail   : String(50)  @mandatory;
+    CustomerEmail   : String(30) @mandatory;
 
     @title: 'Customer Phone Number'
     CustomerPhone   : String(15);
