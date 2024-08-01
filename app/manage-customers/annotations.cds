@@ -16,9 +16,8 @@ annotate service.Customers with @(
 
     UI.LineItem                  : [
         {
-            $Type      : 'UI.DataField',
-            Criticality: #Information,
-            Value      : ID
+            $Type: 'UI.DataField',
+            Value: ID
         },
         {
             $Type: 'UI.DataField',
@@ -37,9 +36,10 @@ annotate service.Customers with @(
             Value: CustomerPhone
         },
         {
-            $Type: 'UI.DataField',
-            Value: salesOrder_ID,
-            ![@UI.Hidden]
+            $Type      : 'UI.DataField',
+            Value      : salesOrder_ID,
+            Criticality: #Information
+        //            ![@UI.Hidden]
         },
         {
             $Type: 'UI.DataField',
@@ -88,12 +88,14 @@ annotate service.Customers with @(
         $Type: 'UI.FieldGroupType',
         Data : [
             {
-                $Type: 'UI.DataField',
-                Value: ID
+                $Type      : 'UI.DataField',
+                Value      : ID,
+                Criticality: #Information
             },
             {
-                $Type: 'UI.DataField',
-                Value: salesOrder_ID
+                $Type      : 'UI.DataField',
+                Value      : salesOrder_ID,
+                Criticality: #Positive
             },
             {
                 $Type: 'UI.DataField',
@@ -118,9 +120,10 @@ annotate service.Customers with @(
         $Type: 'UI.FieldGroupType',
         Data : [
             {
-                $Type: 'UI.DataField',
-                Value: salesOrder.ID,
-                ![@UI.Hidden]
+                $Type      : 'UI.DataField',
+                Value      : salesOrder.ID,
+                Criticality: #Positive
+            //                ![@UI.Hidden]
             },
             {
                 $Type: 'UI.DataField',
@@ -158,31 +161,24 @@ annotate service.Customers with @(
 
 
 annotate service.Customers with {
-    salesOrder @Common.ValueList: {
-        $Type         : 'Common.ValueListType',
-        CollectionPath: 'SalesOrder',
-        Parameters    : [
-            {
-                $Type            : 'Common.ValueListParameterInOut',
-                LocalDataProperty: salesOrder_ID,
-                ValueListProperty: 'ID',
-            },
-            {
-                $Type            : 'Common.ValueListParameterDisplayOnly',
-                ValueListProperty: 'SalesOrderDate',
-            },
-            {
-                $Type            : 'Common.ValueListParameterDisplayOnly',
-                ValueListProperty: 'DeliveryAddress',
-            },
-            {
-                $Type            : 'Common.ValueListParameterDisplayOnly',
-                ValueListProperty: 'TotalAmount',
-            },
-            {
-                $Type            : 'Common.ValueListParameterDisplayOnly',
-                ValueListProperty: 'TotalTax',
-            },
-        ],
+    @Common: {
+        Text                    : salesOrder.SalesOrderNote,
+        TextArrangement         : #TextFirst,
+        ValueListWithFixedValues: true,
+        ValueList               : {
+            CollectionPath: 'SalesOrder',
+            Parameters    : [
+                {
+                    $Type            : 'Common.ValueListParameterInOut',
+                    LocalDataProperty: salesOrder_ID,
+                    ValueListProperty: 'ID'
+                },
+                {
+                    $Type            : 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty: 'SalesOrderNote'
+                }
+            ]
+        }
     }
+    salesOrder;
 };
