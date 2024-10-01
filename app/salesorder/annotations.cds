@@ -3,7 +3,6 @@ using from '../../db/schema';
 
 annotate service.SalesOrder with @(
     UI.SelectionFields         : [
-        ID,
         SalesOrderDate,
         DeliveryAddress
     ],
@@ -143,6 +142,7 @@ annotate service.SalesOrder with @(
                 $Type            : 'UI.DataField',
                 Label            : 'Total Amount',
                 Value            : TotalAmount,
+                Criticality      : Criticality,
                 ![@UI.Importance]: #High
             },
             {
@@ -152,9 +152,10 @@ annotate service.SalesOrder with @(
                 ![@UI.Importance]: #Medium
             },
             {
-                $Type: 'UI.DataField',
-                Label: 'Criticality',
-                Value: Criticality
+                $Type      : 'UI.DataField',
+                Label      : 'Criticality',
+                Value      : Criticality,
+                Criticality: Criticality
             },
             {
                 $Type            : 'UI.DataField',
@@ -270,12 +271,12 @@ annotate service.Customers with @(ValueList: {
 
 annotate service.Customers with {
     ID @Common.Label: '{i18n>Customer ID}'
-    @UI.HiddenFilter
+       @UI.HiddenFilter
 };
 
 annotate service.SalesOrder with {
     ID @Common.Label: '{i18n>Sales Order ID}'
-    @UI.HiddenFilter
+       @UI.HiddenFilter
 };
 
 annotate service.SalesOrder with {

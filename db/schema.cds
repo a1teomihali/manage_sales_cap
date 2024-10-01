@@ -37,7 +37,7 @@ entity SalesOrder : cuid, managed {
 
     @title: 'Criticality'
     @UI.HiddenFilter
-    Criticality     : Integer;
+    Criticality     : Integer    @readonly;
 }
 
 entity Customers : cuid, managed {
